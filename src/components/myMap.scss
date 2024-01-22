@@ -1,0 +1,132 @@
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin closePopup($color, $right) {
+    position: absolute;
+    color: $color;
+    right: $right;
+    font-size: calc(1.5em + 1.5vw);
+    cursor: pointer;
+    padding: 2%;
+}
+
+#cameraimage {
+    position: absolute;
+    width: 350px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1600;
+    padding: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+#closephoto {
+    @include closePopup(#fff, 2%);
+}
+
+#saveImgContainer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 8%;
+}
+
+#myFormContainer {
+    position: absolute;
+    display: none;
+    width: calc(17em + 17vw);
+    margin-top: calc(0.5em + 0.5vw);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    z-index: 2000;
+    background-color: #fff;
+}
+
+ion-grid {
+    width: 100%;
+    color: #666666;
+}
+
+#saved {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: calc(0.5em + 0.5vw);
+    padding: calc(0.3em + 0.3vw);
+    border-radius: 5px;
+    line-height: calc(2.2em + 2.2vw);
+    z-index: 2001;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 20px;
+    }
+}
+
+ion-grid {
+    width: 100%;
+    color: 666666;
+}
+
+ion-input,
+ion-textarea {
+    border-color: #ccc;
+    border-width: thin;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+ion-button {
+    float: right;
+}
+
+.leaflet-popup-content {
+    width: 170px;
+    margin: 8px;
+
+    .headline {
+        font-size: 18px;
+        padding-top: 2px;
+    }
+
+    .comment {
+        padding-bottom: 10px;
+        color: #666;
+    }
+}
+
+.leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    top: 8px;
+    right: 10px;
+    font:
+        30px/24px Tahoma,
+        Verdana,
+        sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.geolocation {
+    color: #ccc;
+    padding: 0px !important;
+}
