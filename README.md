@@ -1,5 +1,5 @@
 # Ionic Capacitor React TypeScript Project
-
+   An App project that saves favorite places on the journey with photos, geolocation and comments. 
 ## Overview
 This project is built with Ionic, Capacitor, React, TypeScript, Leaflet for mapping, and Supabase as the backend. It utilizes various native device functionalities such as the camera and geolocation.
 
